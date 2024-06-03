@@ -14,12 +14,12 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Utility Classes */
-.tall-50 { min-height: 50vh; }
-.tall-60 { min-height: 60vh; }
-.tall-70 { min-height: 70vh; }
-.tall-80 { min-height: 80vh; }
-.tall-90 { min-height: 90vh; }
+/* --------- Utility Classes ----------- */
+.vh50 { min-height: 50vh; }
+.vh60 { min-height: 60vh; }
+.vh70 { min-height: 70vh; }
+.vh80 { min-height: 80vh; }
+.vh90 { min-height: 90vh; }
 
 .padded    { padding: 5%;    }
 .padded-1  { padding: 1rem;  }
@@ -44,3 +44,131 @@ html {
 .center { text-align: center; }
 .right  { text-align: right; }
 
+.copyright { 
+    opacity: 0.8;
+    font-size: 0.9rem;
+}
+
+/* ----------- Typography -------------*/
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    color: rgb(60,60,60)
+}
+
+h2,h3,h4,h5,h6 {
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.01em;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+p {
+ 	font-weight: 300;   
+ 	line-height: 1.3;
+ 	margin-bottom: 0.8rem;
+ 	font-size: 1rem;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+a {
+    color: inherit;
+}
+
+a:hover { color: #a2745c; }
+
+.button {
+    text-decoration: none;
+    border: 2px solid; 
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    font-weight: 400;
+    color: white;
+}
+
+.bg-dark .button:hover {
+    color: #d3b4a2;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 0.25rem;
+}
+
+/* ------- Header & Footer ----------- */
+header {
+    padding: 2% 5%;
+}
+
+footer a:hover { 
+    color: #d3b4a2; 
+}
+
+/* -------- icon grid section -------- */
+.icon-section img {
+    max-width: 3rem;
+    opacity: 0.8;
+    margin: 1rem 0;
+}
+
+/* ------ social icons --------------- */
+.fa-brands {
+    font-size: 1.4rem;
+    padding: 0.4rem;
+    margin: 0.2rem;
+}
+
+/* ------------ image styles --------- */
+.bg-image {
+    background-color: antiquewhite;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bg-plant {
+    background-image: url('/images/plant.jpg');
+    background-position: 50% 43%;
+}
+
+.bg-plant-2 {
+    background-image: url('/images/plant-2.jpg');
+    background-position: 75% 50%;
+}
+
+.bg-meeting {
+    background-image: url('/images/meeting.jpg');
+}
+
+
+
+
+
+/* media queries */
+/* SMALL - SM - max-width in pixels approximately 768px */
+@media(max-width: 48em) {
+
+    .sm-hide { display: none; }
+
+    .sm-center { text-align: center; }
+
+    .sm-flex-flip { flex-direction: column-reverse; }
+
+    .bg-plant {
+        background-image: url('/images/plant-light.png');
+    }
+    
+    .bg-plant-2 {
+        background-image: url('/images/plant-2-light.png');
+        background-position: 45% 50%;
+    }
+}
